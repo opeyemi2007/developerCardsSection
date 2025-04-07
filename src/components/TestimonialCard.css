@@ -1,0 +1,81 @@
+.testimonial-card {
+    position: relative;
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .testimonial-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    transition: transform 0.4s ease;
+  }
+  
+  .side-text {
+    position: absolute;
+    bottom: 20px;
+    left: -60px;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    color: #fff;
+    text-align: left;
+  }
+  
+  .side-text h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .side-text p {
+    margin: 0;
+    font-weight: 300;
+  }
+  
+  .full-info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.85);
+    padding: 1.2rem;
+    color: #fff;
+    transition: bottom 0.4s ease;
+  }
+  
+  .testimonial-card:hover .full-info {
+    bottom: 0;
+  }
+  
+  .full-info h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .full-info .role {
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+  }
+  
+  .full-info .quote {
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+  
